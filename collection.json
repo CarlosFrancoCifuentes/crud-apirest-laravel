@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "b738f805-afa4-4ea6-a16e-a89edca8de10",
+		"name": "Examen_220310_cfranco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET CONTACTOS Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CONTACTO Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Carlos\",\r\n    \"tel\": \"888888888\",\r\n    \"num_libro\": 100,\r\n    \"fecha_nacimiento\": \"2022-03-10\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT CONTACTO Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Jose\",\r\n    \"tel\": \"888888888\",\r\n    \"num_libro\": 11,\r\n    \"fecha_nacimiento\": \"2022-03-10\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CONTACTO Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactos/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONTACTO Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/contactos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"contactos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
